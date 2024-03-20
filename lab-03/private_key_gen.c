@@ -34,7 +34,7 @@ int main ()
 
     // calculate z = (p-1) * (q-1)
     BN_sub_word(p, 1);
-    BN_sub_word(p, 1);
+    BN_sub_word(q, 1);
     BN_mul(z, p, q, ctx);
 
     printBN("n = ", n);
