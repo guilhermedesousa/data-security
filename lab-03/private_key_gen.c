@@ -47,6 +47,8 @@ int main ()
 
     // verify if e * d mod z = 1
     BN_mod_mul(check, e, d, z, ctx);
+
+    printBN("e*d (mod z) = ", check);
     
     if (BN_cmp(check, BN_value_one()) == 0) {
         printf("d is correct.\n");
